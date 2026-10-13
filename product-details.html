@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details | Vision Tech Security Peshawar</title>
+  <meta name="description" content="View product specifications, availability, and pricing details for CCTV cameras and security products at Vision Tech Security Peshawar.">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "CCTV Security Product",
+    "brand": {
+      "@type": "Brand",
+      "name": "Vision Tech Security"
+    },
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStoreOnly",
+      "seller": {
+        "@type": "LocalBusiness",
+        "name": "Vision Tech Security",
+        "address": "Peshawar, Khyber Pakhtunkhwa, Pakistan"
+      }
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <header id="main-header"></header>
+
+  <main style="padding: 40px 0 90px 0;">
+    <div class="container">
+      <!-- Breadcrumb -->
+      <div style="font-size: 0.85rem; color: var(--text-dim); margin-bottom: 24px;">
+        <a href="index.html" style="color: var(--text-muted);">Home</a>
+        <span style="margin: 0 8px;">/</span>
+        <a href="products.html" style="color: var(--text-muted);">Products</a>
+        <span style="margin: 0 8px;">/</span>
+        <span style="color: var(--accent-cyan);" id="detailBreadcrumbCurrent">Product</span>
+      </div>
+
+      <div class="product-detail-grid">
+        <!-- Gallery Column -->
+        <div class="detail-gallery">
+          <div class="detail-main-img-box">
+            <img id="detailMainImage" src="images/placeholder-default.svg" alt="CCTV Product" onerror="this.src='images/placeholder-default.svg'">
+          </div>
+
+          <!-- Assurance Cards below image -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 14px;">
+            <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 12px; font-size: 0.82rem; color: var(--text-muted); display: flex; align-items: center; gap: 8px;">
+              <svg style="width: 18px; height: 18px; color: var(--accent-cyan); flex-shrink: 0;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              <span>Genuine Hardware</span>
+            </div>
+            <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 12px; font-size: 0.82rem; color: var(--text-muted); display: flex; align-items: center; gap: 8px;">
+              <svg style="width: 18px; height: 18px; color: var(--accent-cyan); flex-shrink: 0;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <span>Installation in Peshawar</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Details Info Column -->
+        <div>
+          <div class="detail-meta-header">
+            <span class="detail-brand-badge" id="detailBrand">BRAND</span>
+            <h1 class="detail-title" id="detailTitle">Product Name</h1>
+            <div style="display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-bottom: 14px;">
+              <span class="stock-badge" id="detailAvailability">Contact for Availability</span>
+              <span style="font-size: 0.8rem; color: var(--text-dim);" id="detailSku">SKU: ---</span>
+            </div>
+          </div>
+
+          <!-- Price & Inquiry Note -->
+          <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 18px; margin-bottom: 24px;">
+            <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 6px;">
+              <span style="font-size: 2rem; font-weight: 800; color: #38bdf8;" id="detailPrice">Request Price</span>
+              <span style="font-size: 1.1rem; color: var(--text-dim); display: none;" id="detailOldPrice"></span>
+            </div>
+            <p style="font-size: 0.8rem; color: var(--text-dim); line-height: 1.5;">
+              * Daily CCTV hardware and exchange rates vary in Pakistan. Please message us on WhatsApp for current pricing and stock availability in Peshawar.
+            </p>
+          </div>
+
+          <!-- Description -->
+          <p id="detailDesc" style="color: var(--text-muted); font-size: 1rem; line-height: 1.6; margin-bottom: 24px;">
+            Loading product description...
+          </p>
+
+          <!-- Key Features -->
+          <div style="margin-bottom: 28px;">
+            <h3 style="font-size: 1.1rem; font-weight: 700; color: #ffffff; margin-bottom: 12px;">Product Highlights</h3>
+            <ul id="detailFeaturesList" style="list-style: none;">
+              <!-- Populated via JS -->
+            </ul>
+          </div>
+
+          <!-- Purchase & WhatsApp Action Row -->
+          <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-light); border-radius: var(--radius-lg); padding: 20px; margin-bottom: 30px;">
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 14px;">
+              <label style="font-size: 0.9rem; font-weight: 600; color: #ffffff;">Quantity:</label>
+              <div class="qty-counter">
+                <button type="button" class="qty-btn" onclick="let q=document.getElementById('detailQtyInput'); if(parseInt(q.value)>1) q.value=parseInt(q.value)-1;">-</button>
+                <input type="text" id="detailQtyInput" value="1" readonly style="width: 44px; text-align: center; background: transparent; border: none; color: #fff; font-weight: 700;">
+                <button type="button" class="qty-btn" onclick="let q=document.getElementById('detailQtyInput'); q.value=parseInt(q.value)+1;">+</button>
+              </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px;">
+              <button type="button" class="btn btn-outline" id="detailAddCartBtn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                <span>Add to Cart</span>
+              </button>
+              <a id="detailPriceRequestBtn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="text-align: center;">
+                <span>Request Price</span>
+              </a>
+            </div>
+
+            <a id="detailWhatsAppBtn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-block" style="padding: 12px;">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.28-2.42 5.83a8.17 8.17 0 0 1-5.82 2.41c-1.47 0-2.91-.39-4.18-1.15l-.3-.18-3.11.82.83-3.03-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.59c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.16.25-.64.81-.79.97-.14.16-.29.18-.54.06-.25-.13-1.06-.39-2.02-1.24-.75-.67-1.25-1.49-1.4-1.74-.14-.25-.02-.38.11-.5.11-.11.25-.29.38-.43.12-.15.16-.25.25-.41.08-.16.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.16 0-.43.06-.66.31-.23.25-.87.85-.87 2.07s.89 2.4 1.02 2.57c.12.16 1.76 2.68 4.26 3.76.59.26 1.06.41 1.42.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.18-.47-.3z"/></svg>
+              <span>Order on WhatsApp (03199982061)</span>
+            </a>
+          </div>
+
+          <!-- Specifications Table -->
+          <div style="margin-bottom: 30px;">
+            <h3 style="font-size: 1.15rem; font-weight: 700; color: #ffffff; margin-bottom: 12px;">Product Specifications</h3>
+            <table class="detail-specs-table" id="detailSpecsTable">
+              <!-- Injected via JS -->
+            </table>
+          </div>
+
+          <!-- What's In The Box -->
+          <div>
+            <h3 style="font-size: 1.15rem; font-weight: 700; color: #ffffff; margin-bottom: 12px;">Package Contents &amp; Installation</h3>
+            <ul id="detailBoxList" style="list-style: none;">
+              <!-- Injected via JS -->
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Related Products -->
+      <div style="margin-top: 80px; padding-top: 40px; border-top: 1px solid var(--border-subtle);">
+        <div class="section-header" style="text-align: left; margin-bottom: 24px;">
+          <div class="section-tag">Recommendations</div>
+          <h2 class="section-title">Related Equipment</h2>
+        </div>
+        <div class="products-grid" id="relatedProductsGrid"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer id="main-footer"></footer>
+
+  <script src="js/products-data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      Navigation.init("products");
+      App.initProductDetailsPage();
+    });
+  </script>
+</body>
+</html>

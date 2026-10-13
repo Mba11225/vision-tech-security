@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart | Vision Tech Security Peshawar</title>
+  <meta name="description" content="Review your selected CCTV cameras, DVR/NVR recorders, hard drives and security accessories before requesting an order or installation.">
+  <link rel="canonical" href="https://visiontechsecurity.pk/cart.html">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header id="main-header"></header>
+
+  <main style="padding: 40px 0 90px 0;">
+    <div class="container">
+      <div style="font-size: 0.85rem; color: var(--text-dim); margin-bottom: 20px;">
+        <a href="index.html" style="color: var(--text-muted);">Home</a>
+        <span style="margin: 0 8px;">/</span>
+        <span style="color: var(--accent-cyan);">Shopping Cart</span>
+      </div>
+
+      <div class="section-header" style="text-align: left; margin-bottom: 30px;">
+        <div class="section-tag">Order Review</div>
+        <h1 class="section-title">Your Selected Equipment</h1>
+        <p class="section-subtitle">Review items, adjust quantities, and proceed to submit your order or installation request.</p>
+      </div>
+
+      <!-- Empty State -->
+      <div id="cartEmptyState" class="hidden" style="text-align: center; padding: 80px 20px; background: var(--bg-card); border-radius: var(--radius-xl); border: 1px solid var(--border-subtle); max-width: 600px; margin: 40px auto;">
+        <div style="width: 70px; height: 70px; border-radius: 50%; background: rgba(56, 189, 248, 0.1); border: 1px solid rgba(56, 189, 248, 0.3); display: flex; align-items: center; justify-content: center; margin: 0 auto 20px auto; color: var(--accent-cyan);">
+          <svg style="width: 32px; height: 32px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+        </div>
+        <h2 style="font-size: 1.8rem; margin-bottom: 10px; color: #ffffff;">Your Cart is Empty</h2>
+        <p style="color: var(--text-muted); margin-bottom: 24px; font-size: 0.95rem;">You haven't added any CCTV cameras or security equipment yet.</p>
+        <a href="products.html" class="btn btn-primary">Browse All Equipment</a>
+      </div>
+
+      <!-- Cart Content Wrapper -->
+      <div id="cartContentWrapper" class="cart-layout">
+        <!-- Cart Table -->
+        <div class="cart-table-card">
+          <table class="cart-table">
+            <thead>
+              <tr>
+                <th>Product Description</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="cartItemsBody">
+              <!-- Rendered via App.initCartPage() -->
+            </tbody>
+          </table>
+
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--border-subtle); flex-wrap: wrap; gap: 14px;">
+            <a href="products.html" class="btn btn-outline btn-sm">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+              <span>Continue Shopping</span>
+            </a>
+            <button type="button" class="btn btn-outline btn-sm" onclick="if(confirm('Are you sure you want to clear your cart?')) Cart.clearCart();">
+              Clear Entire Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Cart Summary Card -->
+        <div class="cart-summary-card">
+          <h3 class="cart-summary-title">Order Summary</h3>
+
+          <div class="summary-row">
+            <span>Equipment Subtotal:</span>
+            <strong id="cartSubtotal" style="color: #ffffff;">Price on Request</strong>
+          </div>
+
+          <div class="summary-row">
+            <span>Service Area:</span>
+            <span style="color: #ffffff;">Peshawar, KPK</span>
+          </div>
+
+          <div class="summary-row">
+            <span>Installation Option:</span>
+            <span style="color: var(--accent-cyan); font-weight: 600;">Select at checkout</span>
+          </div>
+
+          <div class="summary-row total-row">
+            <span>Estimated Total:</span>
+            <span class="total-amount" id="cartTotal">Price on Request</span>
+          </div>
+
+          <div style="background: rgba(56, 189, 248, 0.08); border: 1px solid rgba(56, 189, 248, 0.2); border-radius: var(--radius-md); padding: 12px; margin: 20px 0; font-size: 0.8rem; color: #cbd5e1;">
+            💡 <strong>Note on Pricing:</strong> CCTV hardware rates in Pakistan fluctuate based on daily exchange rates. Final price will be verified on WhatsApp before confirmation.
+          </div>
+
+          <a href="checkout.html" class="btn btn-primary btn-block" style="padding: 14px; font-size: 1.05rem;">
+            Proceed to Order Request &rarr;
+          </a>
+
+          <div style="margin-top: 16px; text-align: center;">
+            <a href="https://wa.me/923199982061" target="_blank" rel="noopener noreferrer" style="color: var(--accent-cyan); font-size: 0.85rem; font-weight: 600;">
+              Need advice before ordering? Chat with us
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer id="main-footer"></footer>
+
+  <script src="js/products-data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      Navigation.init("cart");
+      App.initCartPage();
+    });
+  </script>
+</body>
+</html>

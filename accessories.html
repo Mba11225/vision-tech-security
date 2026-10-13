@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CCTV Accessories & Power Supplies in Peshawar | Vision Tech</title>
+  <meta name="description" content="Shop CCTV installation accessories in Peshawar. Centralized 12V power supply boxes, pure copper BNC connectors, DC plugs, Cat6 RJ45 connectors and mounts.">
+  <link rel="canonical" href="https://visiontechsecurity.pk/accessories.html">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://visiontechsecurity.pk/"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Accessories",
+      "item": "https://visiontechsecurity.pk/accessories.html"
+    }]
+  }
+  </script>
+</head>
+<body>
+
+  <header id="main-header"></header>
+
+  <main style="padding: 40px 0 80px 0;">
+    <div class="container">
+      <div style="font-size: 0.85rem; color: var(--text-dim); margin-bottom: 20px;">
+        <a href="index.html" style="color: var(--text-muted);">Home</a>
+        <span style="margin: 0 8px;">/</span>
+        <a href="products.html" style="color: var(--text-muted);">Products</a>
+        <span style="margin: 0 8px;">/</span>
+        <span style="color: var(--accent-cyan);">CCTV Accessories</span>
+      </div>
+
+      <div class="section-header" style="text-align: left; margin-bottom: 30px;">
+        <div class="section-tag">Essential Hardware</div>
+        <h1 class="section-title">CCTV Accessories & Power in Peshawar</h1>
+        <p class="section-subtitle">Pure copper BNC/DC connectors, gold-plated RJ45 plugs, centralized 12V regulated power boxes, and durable accessories for reliable camera installations.</p>
+      </div>
+
+      <div class="products-grid" id="accessoriesGrid">
+        <!-- Rendered via JavaScript -->
+      </div>
+    </div>
+  </main>
+
+  <footer id="main-footer"></footer>
+
+  <script src="js/products-data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      Navigation.init("products");
+      App.renderProductsList("accessoriesGrid", p => p.category === "accessories");
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DVR & NVR Recording Units in Peshawar | Vision Tech Security</title>
+  <meta name="description" content="Buy genuine Hikvision and Dahua DVR & NVR video recorders in Peshawar. 4, 8, and 16-channel systems with AcuSense AI, H.265 compression, and mobile live streaming.">
+  <link rel="canonical" href="./dvr-nvr.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DVR & NVR Video Recorders | Vision Tech Security Peshawar">
+  <meta property="og:description" content="Buy genuine Hikvision and Dahua DVR & NVR video recorders in Peshawar with AcuSense AI, H.265 compression, and mobile live streaming.">
+  <meta property="og:url" content="./dvr-nvr.html">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "./index.html"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "DVR & NVR",
+      "item": "./dvr-nvr.html"
+    }]
+  }
+  </script>
+</head>
+<body>
+
+  <header id="main-header"></header>
+
+  <main style="padding: 40px 0 80px 0;">
+    <div class="container">
+      <div style="font-size: 0.85rem; color: var(--text-dim); margin-bottom: 20px;">
+        <a href="index.html" style="color: var(--text-muted);">Home</a>
+        <span style="margin: 0 8px;">/</span>
+        <a href="products.html" style="color: var(--text-muted);">Products</a>
+        <span style="margin: 0 8px;">/</span>
+        <span style="color: var(--accent-cyan);">DVR & NVR</span>
+      </div>
+
+      <div class="section-header" style="text-align: left; margin-bottom: 30px;">
+        <div class="section-tag">Video Recorders</div>
+        <h1 class="section-title">DVR & NVR Systems in Peshawar</h1>
+        <p class="section-subtitle">Intelligent digital & network video recorders featuring AcuSense AI human/vehicle detection, H.265+ compression, and smooth smartphone remote streaming.</p>
+      </div>
+
+      <div class="catalog-layout">
+        <!-- Sidebar Filters -->
+        <aside class="filter-sidebar">
+          <div class="filter-header">
+            <span class="filter-title">
+              <svg style="width: 18px; height: 18px; color: var(--accent-cyan);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+              <span>Recorder Filters</span>
+            </span>
+            <button type="button" class="filter-reset-btn" id="resetFiltersBtn">Reset</button>
+          </div>
+
+          <div class="filter-group">
+            <h4 class="filter-group-title">Brand</h4>
+            <div class="filter-checkbox-list">
+              <label class="custom-checkbox-label">
+                <input type="checkbox" name="filterBrand" value="Hikvision"> Hikvision
+              </label>
+              <label class="custom-checkbox-label">
+                <input type="checkbox" name="filterBrand" value="Dahua"> Dahua
+              </label>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <h4 class="filter-group-title">Recorder Type</h4>
+            <div class="filter-checkbox-list">
+              <label class="custom-checkbox-label">
+                <input type="checkbox" name="filterType" value="Analog / HD-TVI"> DVR (Analog HD)
+              </label>
+              <label class="custom-checkbox-label">
+                <input type="checkbox" name="filterType" value="PoE"> NVR (PoE Network)
+              </label>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Grid -->
+        <div>
+          <div class="catalog-top-bar">
+            <div class="catalog-count-text" id="catalogProductCount">Loading DVR/NVR units...</div>
+            <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+              <div class="catalog-search-input-wrap">
+                <svg style="width: 16px; height: 16px; color: var(--text-dim);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <input type="text" id="filterSearchInput" placeholder="Search DVR/NVR...">
+              </div>
+              <select id="catalogSortSelect" class="form-control" style="width: auto; padding: 6px 12px; font-size: 0.85rem;">
+                <option value="default">Sort by: Featured</option>
+                <option value="name-asc">Name: A to Z</option>
+                <option value="name-desc">Name: Z to A</option>
+                <option value="brand">Brand: A to Z</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="products-grid" id="catalogProductGrid"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer id="main-footer"></footer>
+
+  <script src="js/products-data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      Navigation.init("dvr-nvr");
+      App.initFilters("dvr-nvr");
+    });
+  </script>
+</body>
+</html>

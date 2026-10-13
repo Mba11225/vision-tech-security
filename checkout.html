@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout / Order Request | Vision Tech Security Peshawar</title>
+  <meta name="description" content="Submit your CCTV order request or book equipment with professional installation in Peshawar. Instant confirmation via WhatsApp.">
+  <link rel="canonical" href="https://visiontechsecurity.pk/checkout.html">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header id="main-header"></header>
+
+  <main style="padding: 40px 0 90px 0;">
+    <div class="container" id="checkoutMainContainer">
+      <div style="font-size: 0.85rem; color: var(--text-dim); margin-bottom: 20px;">
+        <a href="index.html" style="color: var(--text-muted);">Home</a>
+        <span style="margin: 0 8px;">/</span>
+        <a href="cart.html" style="color: var(--text-muted);">Cart</a>
+        <span style="margin: 0 8px;">/</span>
+        <span style="color: var(--accent-cyan);">Checkout / Order Request</span>
+      </div>
+
+      <div class="section-header" style="text-align: left; margin-bottom: 30px;">
+        <div class="section-tag">Order Confirmation</div>
+        <h1 class="section-title">Checkout & Order Request</h1>
+        <p class="section-subtitle">Please provide your delivery and contact details in Peshawar to complete your order request.</p>
+      </div>
+
+      <div class="cart-layout">
+        <!-- Customer Details Form -->
+        <div class="booking-card" style="margin-bottom: 0;">
+          <h2 class="booking-card-title">Customer Information</h2>
+          <p class="booking-card-sub">We will contact you via WhatsApp/Phone to verify product specifications and delivery schedule.</p>
+
+          <form id="checkoutForm">
+            <div class="form-group">
+              <label class="form-label" for="orderFullName">Full Name *</label>
+              <input type="text" id="orderFullName" class="form-control" placeholder="Enter your full name" required>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+              <div class="form-group">
+                <label class="form-label" for="orderPhone">Phone Number *</label>
+                <input type="tel" id="orderPhone" class="form-control" placeholder="03199982061" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="orderWhatsApp">WhatsApp Number *</label>
+                <input type="tel" id="orderWhatsApp" class="form-control" placeholder="03199982061" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="orderAddress">Street Address / Landmark *</label>
+              <input type="text" id="orderAddress" class="form-control" placeholder="House/Shop #, Street, Plaza name..." required>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+              <div class="form-group">
+                <label class="form-label" for="orderCity">City</label>
+                <input type="text" id="orderCity" class="form-control" value="Peshawar" readonly style="background: rgba(255, 255, 255, 0.02); color: #cbd5e1;">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="orderArea">Area / Sector in Peshawar *</label>
+                <input type="text" id="orderArea" class="form-control" placeholder="e.g. University Road, Hayatabad..." required>
+              </div>
+            </div>
+
+            <!-- Installation Required Checkbox -->
+            <div style="background: rgba(56, 189, 248, 0.08); border: 1px solid rgba(56, 189, 248, 0.25); border-radius: var(--radius-md); padding: 16px; margin: 20px 0;">
+              <label style="display: flex; align-items: flex-start; gap: 12px; cursor: pointer;">
+                <input type="checkbox" id="orderInstallation" style="accent-color: var(--accent-blue); width: 20px; height: 20px; margin-top: 2px;">
+                <div>
+                  <span style="font-weight: 700; color: #ffffff; font-size: 0.95rem; display: block;">I Require Professional Installation in Peshawar</span>
+                  <span style="font-size: 0.82rem; color: var(--text-muted); display: block; margin-top: 2px;">
+                    Our technicians will bring conduits, cable rolls, drill gear and set up mobile app live viewing. Installation fee will be quoted according to site wiring.
+                  </span>
+                </div>
+              </label>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="orderNotes">Additional Notes / Special Instructions</label>
+              <textarea id="orderNotes" class="form-control" placeholder="Specify any preferences, e.g., preferred installation time, DVR location, or specific connector needs..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-whatsapp btn-block" style="padding: 16px; font-size: 1.05rem;">
+              <span>Submit Order Request</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Checkout Summary Sidebar -->
+        <div class="cart-summary-card">
+          <h3 class="cart-summary-title">Items in Your Order</h3>
+          
+          <div id="checkoutSummaryBody">
+            <!-- Populated via App.initCheckoutPage() -->
+          </div>
+
+          <div class="summary-row total-row" style="margin-top: 14px;">
+            <span>Estimated Total:</span>
+            <span class="total-amount" id="checkoutTotal">Price on Request</span>
+          </div>
+
+          <div style="margin-top: 20px; padding: 12px; background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); font-size: 0.8rem; color: var(--text-dim);">
+            🛡️ <strong>Direct Contact Guarantee:</strong> We verify all orders directly with you before dispatching equipment or technicians in Peshawar.
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Modal: Order Request Received -->
+  <div id="orderSuccessModal" class="search-modal-backdrop">
+    <div class="search-modal-box" style="max-width: 580px; text-align: center; padding: 36px 28px;">
+      <div style="width: 70px; height: 70px; border-radius: 50%; background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(16, 185, 129, 0.4); display: flex; align-items: center; justify-content: center; margin: 0 auto 20px auto; color: #10b981;">
+        <svg style="width: 36px; height: 36px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+      </div>
+
+      <h2 style="font-size: 1.8rem; font-weight: 800; color: #ffffff; margin-bottom: 10px;">Order Request Received!</h2>
+      <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 24px;">
+        Thank you for choosing Vision Tech Security. Your order request has been logged. To speed up verification and confirm delivery or installation scheduling in Peshawar, please click the button below to send your pre-filled details directly to our WhatsApp.
+      </p>
+
+      <a id="modalWhatsAppRedirectBtn" href="https://wa.me/923199982061" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-block" style="padding: 14px; font-size: 1.05rem; margin-bottom: 12px;">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.28-2.42 5.83a8.17 8.17 0 0 1-5.82 2.41c-1.47 0-2.91-.39-4.18-1.15l-.3-.18-3.11.82.83-3.03-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.59c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.16.25-.64.81-.79.97-.14.16-.29.18-.54.06-.25-.13-1.06-.39-2.02-1.24-.75-.67-1.25-1.49-1.4-1.74-.14-.25-.02-.38.11-.5.11-.11.25-.29.38-.43.12-.15.16-.25.25-.41.08-.16.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.16 0-.43.06-.66.31-.23.25-.87.85-.87 2.07s.89 2.4 1.02 2.57c.12.16 1.76 2.68 4.26 3.76.59.26 1.06.41 1.42.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.18-.47-.3z"/></svg>
+        <span>Confirm on WhatsApp (03199982061)</span>
+      </a>
+
+      <a href="index.html" class="btn btn-outline btn-block">Return to Home</a>
+    </div>
+  </div>
+
+  <footer id="main-footer"></footer>
+
+  <script src="js/products-data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      Navigation.init("cart");
+      App.initCheckoutPage();
+    });
+  </script>
+</body>
+</html>

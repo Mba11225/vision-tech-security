@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#050814" />
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <radialGradient id="glowGrad" cx="50%" cy="45%" r="45%">
+      <stop offset="0%" stop-color="rgba(56, 189, 248, 0.15)" />
+      <stop offset="100%" stop-color="rgba(56, 189, 248, 0)" />
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.03)" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgGrad)" />
+  <rect width="800" height="600" fill="url(#grid)" />
+  <circle cx="400" cy="270" r="240" fill="url(#glowGrad)" />
+
+  <!-- Outer Tech Border Ring -->
+  <circle cx="400" cy="260" r="140" fill="none" stroke="rgba(56, 189, 248, 0.12)" stroke-width="2" stroke-dasharray="8 6" />
+  <circle cx="400" cy="260" r="160" fill="none" stroke="rgba(56, 189, 248, 0.06)" stroke-width="1" />
+
+  <!-- Modern CCTV Camera Vector Illustration -->
+  <g transform="translate(400, 260)">
+    <!-- Mount Base on Wall -->
+    <path d="M -150 -50 L -120 -50 L -120 30 L -150 30 Z" fill="#1e293b" stroke="#334155" stroke-width="2" />
+    <!-- Articulated Arm / Swivel Bracket -->
+    <path d="M -120 -10 L -60 -10 L -40 20 L -60 30 L -120 10 Z" fill="#334155" stroke="#475569" stroke-width="2" />
+    <circle cx="-50" cy="25" r="8" fill="#38bdf8" />
+    
+    <!-- Sun Shield / Hood -->
+    <path d="M -70 -70 L 120 -50 L 110 -35 L -70 -45 Z" fill="#0284c7" opacity="0.85" />
+    
+    <!-- Camera Bullet Body -->
+    <path d="M -60 -45 L 85 -30 L 85 45 L -60 35 Z" fill="#1e293b" stroke="#38bdf8" stroke-width="2.5" />
+    <!-- Rear Cable Gland -->
+    <rect x="-75" y="-15" width="15" height="20" rx="3" fill="#0f172a" stroke="#475569" stroke-width="1.5" />
+
+    <!-- Front Lens Ring Face -->
+    <ellipse cx="85" cy="8" rx="20" ry="38" fill="#0f172a" stroke="#38bdf8" stroke-width="3" />
+    <!-- Optical Lens Inner -->
+    <ellipse cx="87" cy="8" rx="14" ry="26" fill="#0284c7" opacity="0.6" />
+    <ellipse cx="89" cy="8" rx="8" ry="16" fill="#0f172a" />
+    <ellipse cx="91" cy="6" rx="4" ry="8" fill="#38bdf8" />
+
+    <!-- IR LED Ring Indicators -->
+    <circle cx="80" cy="-18" r="3" fill="#38bdf8" opacity="0.9" />
+    <circle cx="80" cy="34" r="3" fill="#38bdf8" opacity="0.9" />
+    <circle cx="72" cy="-8" r="2.5" fill="#38bdf8" opacity="0.7" />
+    <circle cx="72" cy="24" r="2.5" fill="#38bdf8" opacity="0.7" />
+
+    <!-- Status Indicator LED -->
+    <circle cx="-40" cy="20" r="4" fill="#10b981" />
+  </g>
+
+  <!-- Product Category Label Badge -->
+  <g transform="translate(400, 470)">
+    <rect x="-140" y="-18" width="280" height="36" rx="18" fill="rgba(56, 189, 248, 0.1)" stroke="rgba(56, 189, 248, 0.35)" stroke-width="1.5" />
+    <text x="0" y="5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#38bdf8" text-anchor="middle" letter-spacing="1">CCTV SURVEILLANCE CAMERA</text>
+  </g>
+
+  <!-- Branding Text -->
+  <text x="400" y="530" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="1.5">VISION TECH SECURITY</text>
+  <text x="400" y="555" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle" letter-spacing="0.5">Genuine Hardware • Peshawar, KPK</text>
+</svg>
